@@ -13,4 +13,9 @@ public class JoApiApplication {
         SpringApplication.run(JoApiApplication.class, args);
     }
 
+    @RequestMapping("/")
+    public String home() {
+        return "Hello World";
+    }
+
 }
